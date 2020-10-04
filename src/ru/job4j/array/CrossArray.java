@@ -18,19 +18,16 @@ public class CrossArray {
             map.put(right[i], count == null ? 1 : count + 1);
         }
         //Этот цикл удаляет из HashMap уникальные элементы,
-        // т.е. те которые встретились один раз, оставляя только совпадения и их количество
-      /*  Iterator<Map.Entry<Integer, Integer>> it = map.entrySet().iterator();
+        // т.е. те которые встретились один раз, и выводит в консоль на печать только те ключи, которые совпали.
+        Iterator<Map.Entry<Integer, Integer>> it = map.entrySet().iterator();
         while (it.hasNext()) {
         Map.Entry<Integer, Integer> ent = it.next();
-         if (ent.getValue() == 1) {
-            it.remove();
-         }
-        }*/
-
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() > 1) {     //если раскомментировать код вверху проверка теряет смысл, просто печатаем.
-                System.out.println(entry.getKey());
+            if (ent.getValue() == 1) {
+                it.remove();
+            } else {
+                System.out.println(ent.getKey());
             }
+
         }
     }
 }
