@@ -4,11 +4,11 @@ import java.util.List;
 
 public class RepositionElement {
     public static List<String> changePosition(List<String> list, int index) {
-        String str = list.remove(list.size() - 1);
+        String string = list.remove(list.size() - 1);
         if (index >= list.size()) {
            return list;
         } else {
-            list.set(index, str);
+            list.set(index, string);
         }
         return list;
     }

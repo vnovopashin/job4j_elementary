@@ -4,14 +4,11 @@ public class Liken {
     public static void main(String[] args) {
         int first = 10;
         int second = 9;
-
-        boolean result = 10 > 9; /* first больше second? */
+        boolean result = 10 > 9;
                 System.out.println(result);
-
-        result = 10 < 9; /* first меньше second? */
+        result = 10 < 9;
                 System.out.println(result);
-
-        result = 10 == 9; /* first равна second? */
+        result = 10 == 9;
                 System.out.println(result);
     }
 }
