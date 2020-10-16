@@ -12,12 +12,11 @@ public class Machine {
         for (int i = 0; i < COINS.length; i++) {
             while (calc > 0) {
                 calc = calc - COINS[i];
-                if (calc >= 0) {
-                    rsl[size++] = COINS[i];
-                } else {
+                if (calc < 0) {
                     calc = calc + COINS[i];
                     break;
                 }
+                rsl[size++] = COINS[i];
             }
         }
         return Arrays.copyOf(rsl, size);
