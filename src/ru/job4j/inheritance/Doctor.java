@@ -12,5 +12,5 @@ public class Doctor extends Profession {
         this.whiteRobe = whiteRobe;
     }
 
-    public Diagnosis heal(Patient patient) { }
+   // public Diagnosis heal(Patient patient) { }
 }

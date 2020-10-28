@@ -12,5 +12,5 @@ public class Dentist extends Doctor {
         this.scalpel = scalpel;
     }
 
-    public boolean removeTheTooth() { }
+  //  public boolean removeTheTooth() { }
 }

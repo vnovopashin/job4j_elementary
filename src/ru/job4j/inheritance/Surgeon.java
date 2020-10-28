@@ -12,5 +12,5 @@ public class Surgeon extends Doctor {
         this.scalpel = scalpel;
     }
 
-    public boolean operate() { }
+   // public boolean operate() { }
 }
