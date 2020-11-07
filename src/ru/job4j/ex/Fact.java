@@ -6,6 +6,7 @@ public class Fact {
         System.out.println(fact.calc(5));
         System.out.println(fact.calc(-1));
     }
+
     public int calc(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Значение должно быть больше 0.");
